@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- For copyright / license terms, see COPYRIGHT.rst (top level of repository)
+     Repository: https://github.com/C3S/collecting_society -->
+<tryton>
+    <data>
+        <!--
+
+             Extend existing views
+
+        -->
+        <record model="ir.ui.view" id="bank_account_view_form">
+            <field name="model">bank.account</field>
+            <field name="inherit" ref="bank.bank_account_view_form"/>
+            <field name="name">bank_account_form</field>
+        </record>
+    </data>
+</tryton>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- For copyright / license terms, see COPYRIGHT.rst (top level of repository)
+     Repository: https://github.com/C3S/collecting_society -->
+<form string="Distribution">
+    <label name="code"/>
+    <field name="code"/>
+    <label name="date"/>
+    <field name="date"/>
+    <label name="from_date"/>
+    <field name="from_date"/>
+    <label name="thru_date"/>
+    <field name="thru_date"/>
+    <field name="allocations" colspan="4"/>
+</form>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- For copyright / license terms, see COPYRIGHT.rst (top level of repository)
+     Repository: https://github.com/C3S/collecting_society -->
+<tree string="Artist">
+    <field name="code"/>
+    <field name="rec_name"/>
+    <field name="party"/>
+    <field name="payee"/>
+    <field name="valid_payee"/>
+    <field name="group"/>
+    <field name="hat_balance"/>
+    <field name="invitation_token" tree_invisible="1"/>
+    <field name="active" tree_invisible="1"/>
+</tree>

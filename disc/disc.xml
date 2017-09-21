@@ -1,0 +1,365 @@
+<?xml version="1.0"?>
+<!-- This file is part sale_pos module for Tryton.
+The COPYRIGHT file at the top level of this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+          <!--View gp -->
+          
+
+          <!--View lider 
+          <record model="ir.ui.view" id="lider_view_form">
+              <field name="model">disc.lider</field>
+              <field name="type">form</field>
+              <field name="name">lider_form</field>
+          </record> -->
+
+          <!--View pastor 
+          <record model="ir.ui.view" id="pastor_view_form">
+              <field name="model">disc.pastor</field>
+              <field name="type">form</field>
+              <field name="name">pastor_form</field>
+          </record> -->
+
+
+
+
+          <!-- Tree Lider 
+          <record model="ir.ui.view" id="lider_tree">
+              <field name="model">disc.lider</field>
+              <field name="type">tree</field>
+              <field name="priority" eval="20"/>
+              <field name="name">lider_tree</field>
+          </record> -->
+
+          <!-- Tree Pastor 
+          <record model="ir.ui.view" id="pastor_tree">
+              <field name="model">disc.pastor</field>
+              <field name="type">tree</field>
+              <field name="priority" eval="20"/>
+              <field name="name">pastor_tree</field>
+          </record> -->
+
+          <!-- Asociacion -->
+          <record model="ir.ui.view" id="asociacion_view_form">
+              <field name="model">disc.asociacion</field>
+              <field name="type">form</field>
+              <field name="name">asociacion_form</field>
+          </record>
+          <record model="ir.ui.view" id="asociacion_tree">
+              <field name="model">disc.asociacion</field>
+              <field name="type">tree</field>
+              <field name="priority" eval="20"/>
+              <field name="name">asociacion_tree</field>
+          </record>
+
+          <record model="ir.action.act_window" id="act_asociacion">
+              <field name="name">Asociacion</field>
+              <field name="res_model">disc.asociacion</field>
+          </record>
+
+          <record model="ir.action.act_window.view" id="act_asociacion_tree">
+              <field name="sequence" eval="10"/>
+              <field name="view" ref="asociacion_tree"/>
+              <field name="act_window" ref="act_asociacion"/>
+          </record>
+          <record model="ir.action.act_window.view" id="act_asociacion_form">
+              <field name="sequence" eval="20"/>
+              <field name="view" ref="asociacion_view_form"/>
+              <field name="act_window" ref="act_asociacion"/>
+          </record>
+
+          <!-- Campo Action -->
+          <record model="ir.ui.view" id="campo_view_form">
+              <field name="model">disc.campo</field>
+              <field name="type">form</field>
+              <field name="name">campo_form</field>
+          </record>
+          <record model="ir.ui.view" id="campo_tree">
+              <field name="model">disc.campo</field>
+              <field name="type">tree</field>
+              <field name="priority" eval="20"/>
+              <field name="name">campo_tree</field>
+          </record>
+          <record model="ir.action.act_window" id="act_campo">
+              <field name="name">Campo</field>
+              <field name="res_model">disc.campo</field>
+          </record>
+          <record model="ir.action.act_window.view" id="act_campo_tree">
+              <field name="sequence" eval="10"/>
+              <field name="view" ref="campo_tree"/>
+              <field name="act_window" ref="act_campo"/>
+          </record>
+          <record model="ir.action.act_window.view" id="act_campo_form">
+              <field name="sequence" eval="20"/>
+              <field name="view" ref="campo_view_form"/>
+              <field name="act_window" ref="act_campo"/>
+          </record>
+
+          <!-- Zona Action -->
+          <record model="ir.ui.view" id="zona_view_form">
+              <field name="model">disc.zona</field>
+              <field name="type">form</field>
+              <field name="name">zona_form</field>
+          </record>
+          <record model="ir.ui.view" id="zona_tree">
+              <field name="model">disc.zona</field>
+              <field name="type">tree</field>
+              <field name="priority" eval="20"/>
+              <field name="name">zona_tree</field>
+          </record>
+
+          <record model="ir.action.act_window" id="act_zona">
+              <field name="name">Zona</field>
+              <field name="res_model">disc.zona</field>
+          </record>
+          <record model="ir.action.act_window.view" id="act_zona_tree">
+              <field name="sequence" eval="10"/>
+              <field name="view" ref="zona_tree"/>
+              <field name="act_window" ref="act_zona"/>
+          </record>
+          <record model="ir.action.act_window.view" id="act_zona_form">
+              <field name="sequence" eval="20"/>
+              <field name="view" ref="zona_view_form"/>
+              <field name="act_window" ref="act_zona"/>
+          </record>
+
+          <!-- Distrito Action -->
+
+          <record model="ir.ui.view" id="distrito_view_form">
+              <field name="model">disc.distrito</field>
+              <field name="type">form</field>
+              <field name="name">distrito_form</field>
+          </record>
+          <record model="ir.ui.view" id="distrito_tree">
+              <field name="model">disc.distrito</field>
+              <field name="type">tree</field>
+              <field name="priority" eval="20"/>
+              <field name="name">distrito_tree</field>
+          </record>
+
+          <record model="ir.action.act_window" id="act_distrito">
+              <field name="name">Distrito</field>
+              <field name="res_model">disc.distrito</field>
+          </record>
+          <!--
+          <record model="ir.action.keyword"
+                id="act_distrito1">
+            <field name="keyword">form_relate</field>
+            <field name="model">disc.distrito,-1</field>
+            <field name="action" ref="act_distrito"/>
+          </record>-->
+          <record model="ir.action.keyword" id="act_distrito_keyword">
+            <field name="keyword">tree_open</field>
+            <field name="model">disc.distrito,-1</field>
+            <field name="action" ref="act_distrito"/>
+        </record>
+          <record model="ir.action.act_window.view" id="act_distrito_tree">
+              <field name="sequence" eval="10"/>
+              <field name="view" ref="distrito_tree"/>
+              <field name="act_window" ref="act_distrito"/>
+          </record>
+          <record model="ir.action.act_window.view" id="act_distrito_form">
+              <field name="sequence" eval="20"/>
+              <field name="view" ref="distrito_view_form"/>
+              <field name="act_window" ref="act_distrito"/>
+          </record>
+
+          <!-- Iglesia Action -->
+          <record model="ir.ui.view" id="iglesia_view_form">
+              <field name="model">disc.iglesia</field>
+              <field name="type">form</field>
+              <field name="name">iglesia_form</field>
+          </record>
+          <record model="ir.ui.view" id="iglesia_tree">
+              <field name="model">disc.iglesia</field>
+              <field name="type">tree</field>
+              <field name="priority" eval="20"/>
+              <field name="name">iglesia_tree</field>
+          </record>
+
+          <record model="ir.action.act_window" id="act_iglesia">
+              <field name="name">Iglesia</field>
+              <field name="res_model">disc.iglesia</field>
+          </record>
+          <record model="ir.action.act_window.view" id="act_iglesia_tree">
+              <field name="sequence" eval="10"/>
+              <field name="view" ref="iglesia_tree"/>
+              <field name="act_window" ref="act_iglesia"/>
+          </record>
+          <record model="ir.action.act_window.view" id="act_iglesia_form">
+              <field name="sequence" eval="20"/>
+              <field name="view" ref="iglesia_view_form"/>
+              <field name="act_window" ref="act_iglesia"/>
+          </record>
+
+          <!-- GP Action -->
+          <record model="ir.ui.view" id="gp_view_form">
+              <field name="model">disc.gp</field>
+              <field name="type">form</field>
+              <field name="name">gp_form</field>
+          </record>
+          <record model="ir.ui.view" id="gp_tree">
+              <field name="model">disc.gp</field>
+              <field name="type">tree</field>
+              <field name="priority" eval="20"/>
+              <field name="name">gp_tree</field>
+          </record>
+
+          <record model="ir.action.act_window" id="act_gp">
+              <field name="name">GP</field>
+              <field name="res_model">disc.gp</field>
+          </record>
+          <record model="ir.action.act_window.view" id="act_gp_tree">
+              <field name="sequence" eval="10"/>
+              <field name="view" ref="gp_tree"/>
+              <field name="act_window" ref="act_gp"/>
+          </record>
+          <record model="ir.action.act_window.view" id="act_gp_form">
+              <field name="sequence" eval="20"/>
+              <field name="view" ref="gp_view_form"/>
+              <field name="act_window" ref="act_gp"/>
+          </record>
+
+          <!-- Reporte Action -->
+          <record model="ir.ui.view" id="reporte_tree">
+              <field name="model">disc.reporte</field>
+              <field name="type">tree</field>
+              <field name="name">reporte_tree</field>
+          </record>
+          <record model="ir.ui.view" id="reporte_view_form">
+              <field name="model">disc.reporte</field>
+              <field name="type">form</field>
+              <field name="name">reporte_form</field>
+          </record>
+          <record model="ir.action.act_window" id="act_reporte">
+              <field name="name">Reporte</field>
+              <field name="res_model">disc.reporte</field>
+          </record>
+          <record model="ir.action.act_window.view" id="act_reporte_tree">
+              <field name="sequence" eval="10"/>
+              <field name="view" ref="reporte_tree"/>
+              <field name="act_window" ref="act_reporte"/>
+          </record>
+          <record model="ir.action.act_window.view" id="act_reporte_form">
+              <field name="sequence" eval="20"/>
+              <field name="view" ref="reporte_view_form"/>
+              <field name="act_window" ref="act_reporte"/>
+          </record>
+
+          <!-- Reporte Bautizos -->
+          <record model="ir.ui.view" id="reporte_bautizo_tree">
+              <field name="model">disc.reporte.bautizo</field>
+              <field name="type">tree</field>
+              <field name="name">reporte_bautizo_tree</field>
+          </record>
+          <record model="ir.ui.view" id="reporte_bautizo_form">
+              <field name="model">disc.reporte.bautizo</field>
+              <field name="type">form</field>
+              <field name="name">reporte_bautizo_form</field>
+          </record>
+
+          <!-- Lider Action 
+          <record model="ir.action.act_window" id="act_lider">
+              <field name="name">Lider</field>
+              <field name="res_model">disc.lider</field>
+          </record>
+          <record model="ir.action.act_window.view" id="act_lider_tree">
+              <field name="sequence" eval="10"/>
+              <field name="view" ref="lider_tree"/>
+              <field name="act_window" ref="act_lider"/>
+          </record>
+          <record model="ir.action.act_window.view" id="act_lider_form">
+              <field name="sequence" eval="20"/>
+              <field name="view" ref="lider_view_form"/>
+              <field name="act_window" ref="act_lider"/>
+          </record> -->
+
+          <!-- Pastor Action           <record model="ir.action.act_window" id="act_pastor">
+              <field name="name">Pastor</field>
+              <field name="res_model">disc.pastor</field>
+          </record>
+          <record model="ir.action.act_window.view" id="act_pastor_tree">
+              <field name="sequence" eval="10"/>
+              <field name="view" ref="pastor_tree"/>
+              <field name="act_window" ref="act_pastor"/>
+          </record>
+          <record model="ir.action.act_window.view" id="act_pastor_form">
+              <field name="sequence" eval="20"/>
+              <field name="view" ref="pastor_view_form"/>
+              <field name="act_window" ref="act_pastor"/>
+          </record> -->
+
+          <!-- Icons -->
+          <!-- Create the DISC icon -->
+          <record model="ir.ui.icon" id="discipulado_icon">
+            <field name="name">discipulado_icon</field>
+            <field name="path">icons/discipulado_icon.svg</field>
+          </record>
+
+          <!-- Menuitem -->
+
+          <menuitem name="Discipulado" sequence="0" id="menu_discipulado"
+            icon="discipulado_icon"/>
+
+          <menuitem parent="menu_discipulado" sequence="1" id="item_asociacion"
+            action="act_asociacion"/>
+
+          <menuitem parent="menu_discipulado" sequence="2" id="item_campo"
+            action="act_campo"/>
+
+          <menuitem parent="menu_discipulado" sequence="3" id="item_zona"
+            action="act_zona"/>
+
+          <menuitem parent="menu_discipulado" sequence="4" id="item_distrito"
+            action="act_distrito"/>
+
+          <menuitem parent="menu_discipulado" sequence="5" id="item_iglesia"
+            action="act_iglesia"/>
+
+          <menuitem parent="menu_discipulado" sequence="6" id="item_gp"
+            action="act_gp"/>
+
+          <menuitem parent="menu_discipulado" sequence="7" id="item_reporte"
+            action="act_reporte"/>
+
+          <!--<menuitem parent="menu_discipulado" sequence="7" id="item_lider"
+            action="act_lider"/>
+
+          <menuitem parent="menu_discipulado" sequence="8" id="item_pastor"
+            action="act_pastor"/>-->
+
+        <!-- PASTOR -->
+
+        <record model="ir.ui.view" id="view_party_form">
+            <field name="model">party.party</field>
+            <field name="inherit" ref="party.party_view_form"/>
+            <field name="name">party_form</field>
+        </record>
+        
+        <!-- Add "Pastor" menu at party level -->
+    
+        <record model="ir.action.act_window" id="act_pastor_form">
+            <field name="name">Pastor</field>
+            <field name="res_model">party.party</field>
+            <field name="domain" eval="[('es_pastor', '=', True)]" pyson="1"/>
+        </record>
+
+        <menuitem parent="menu_discipulado" sequence="1"
+            action="act_pastor_form" id="menu_pastor"/>
+
+        <!-- LIDER -->
+        
+        <!-- Add "People" menu at party level -->
+    
+        <record model="ir.action.act_window" id="act_lider_form">
+            <field name="name">Lider</field>
+            <field name="res_model">party.party</field>
+            <field name="domain" eval="[('es_lider', '=', True)]" pyson="1"/>
+        </record>
+
+        <menuitem parent="menu_discipulado" sequence="2"
+            action="act_lider_form" id="menu_lider"/>
+
+    </data>
+</tryton>

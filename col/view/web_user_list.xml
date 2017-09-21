@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- For copyright / license terms, see COPYRIGHT.rst (top level of repository)
+     Repository: https://github.com/C3S/collecting_society -->
+<data>
+    <xpath
+            expr="/tree/field[@name='email']"
+            position="after">
+        <field name="party"/>
+        <field name="nickname"/>
+        <field name="default_role"/>
+        <field name="clients"/>
+        <field name="show_creative_info"/>
+    </xpath>
+</data>

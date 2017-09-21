@@ -1,0 +1,16 @@
+<data>
+    <xpath expr="/form/notebook/page[@id=&quot;general&quot;]" position="before">
+        <page string="Discipulado" id="party_discipulado">
+            <group col="12" colspan="6" id="party_disc">
+                <label name="es_pastor"/>
+                <field name="es_pastor"/>
+                <label name="es_lider"/>
+                <field name="es_lider"/>
+            </group>
+            <group col="12" colspan="12" id="iglesia_gp">
+                <field name="iglesias" xexpand="1" yexpand="1" yfill="1" xfill="1"/>
+                <field name="gps" xexpand="1" yexpand="1" yfill="1" xfill="1"/>
+            </group>
+        </page>
+    </xpath>
+</data>

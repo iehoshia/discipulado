@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- For copyright / license terms, see COPYRIGHT.rst (top level of repository)
+     Repository: https://github.com/C3S/collecting_society -->
+<data>
+    <xpath expr="/form/field[@name='owners']" position="replace">
+        <label name="owner"/>
+        <field name="owner"/>
+    </xpath>
+</data>
